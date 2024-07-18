@@ -1,2 +1,2 @@
 [web-on-premise]
-node1 ansible_host=172.21.228.180
+node1 ansible_host=172.20.50.34
