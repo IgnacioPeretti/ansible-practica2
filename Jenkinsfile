@@ -2,7 +2,7 @@ pipeline {
     agent { label 'ansible-controller' }
     environment {
         ANSIBLE_PRIVATE_KEY=credentials('ansible-private-key') 
-        ANSIBLE_CONFIG='./actividad/ansible.cfg'
+        ANSIBLE_CONFIG='./ansible.cfg'
     }
     stages {
         stage('Install Ansible collections'){
