@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Run Ansible Playbook from Jenkins') {
             steps {
-                sh 'ansible-playbook -i ./actividad/inventory.init --private-key=$ANSIBLE_PRIVATE_KEY ./main.yml'
+                sh 'ansible-playbook -i -u ./actividad/inventory.init --private-key=$ANSIBLE_PRIVATE_KEY ./main.yml'
             }
         }
     }
